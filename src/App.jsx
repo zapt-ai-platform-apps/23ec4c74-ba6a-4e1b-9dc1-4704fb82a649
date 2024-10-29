@@ -21,7 +21,7 @@ function App() {
   onMount(checkUserSignedIn);
 
   createEffect(() => {
-    const authListener = supabase.auth.onAuthStateChange((_, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_, session) => {
       if (session?.user) {
         setUser(session.user);
         setCurrentPage('homePage');
@@ -32,7 +32,7 @@ function App() {
     });
 
     return () => {
-      authListener.data.unsubscribe();
+      subscription.unsubscribe();
     };
   });
 
@@ -89,7 +89,7 @@ function App() {
       >
         <div class="max-w-4xl mx-auto h-full">
           <div class="flex justify-between items-center mb-8">
-            <h1 class="text-4xl font-bold text-purple-600">صانع سورسات المواقع</h1>
+            <h1 class="text-4xl font-bold text-purple-600">Website Source Code Generator</h1>
             <button
               class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
               onClick={handleSignOut}

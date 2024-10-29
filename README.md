@@ -4,8 +4,6 @@ New App is a website source code generator that allows users to generate simple 
 
 ## Features
 
-- **User Authentication**: Sign in with your preferred social account or via magic link email. Supported providers are Google, Facebook, and Apple.
-
 - **Website Description Input**: Provide a detailed description of the website you want to generate.
 
 - **Generate Source Code**: Click on the "Generate Code" button to generate the HTML and CSS code for your website.
@@ -14,10 +12,8 @@ New App is a website source code generator that allows users to generate simple 
 
 ## User Journey
 
-1. **Sign In**
-   - Open the app. You will be prompted to sign in.
-   - Click on the preferred authentication method (Google, Facebook, Apple, or Magic Link).
-   - After successful authentication, you will be redirected to the main page.
+1. **Access the App**
+   - Open the app. You will be taken directly to the main page.
 
 2. **Describe Your Website**
    - On the main page, you will see a text area labeled "Describe the website you want to generate".
@@ -36,12 +32,9 @@ New App is a website source code generator that allows users to generate simple 
    - You can scroll through the code in each section.
    - Copy the code and use it in your own projects.
 
-5. **Sign Out**
-   - To sign out of the app, click on the "Sign Out" button at the top right corner.
-
 ## External Services Used
 
-- **ZAPT.ai**: The app uses ZAPT.ai's services for authentication and event handling.
+- **ZAPT.ai**: The app uses ZAPT.ai's services for event handling.
 - **ChatGPT API**: The app sends your website description to the backend, which uses the ChatGPT API to generate the corresponding HTML and CSS code.
 
 ## Notes

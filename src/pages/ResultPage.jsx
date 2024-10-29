@@ -1,7 +1,9 @@
 import { Show, createSignal } from 'solid-js';
+import { useNavigate } from '@solidjs/router';
 
 function ResultPage(props) {
   const [copySuccess, setCopySuccess] = createSignal('');
+  const navigate = useNavigate();
 
   const copyToClipboard = async (text) => {
     try {
@@ -18,6 +20,12 @@ function ResultPage(props) {
       <div class="max-w-4xl mx-auto h-full">
         <div class="flex justify-between items-center mb-8">
           <h1 class="text-4xl font-bold text-purple-600 text-right">الكود الناتج</h1>
+          <button
+            class="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+            onClick={() => navigate('/')}
+          >
+            العودة
+          </button>
         </div>
         <Show when={props.generatedCode()}>
           <div class="bg-white rounded-lg shadow-md p-6">

@@ -8,7 +8,7 @@ New App is a website source code generator that allows users to generate simple 
 
 - **Generate Source Code**: Click on the "Generate Code" button to generate the HTML and CSS code for your website.
 
-- **View Generated Code**: The generated HTML and CSS code will be displayed on the screen for you to copy and use.
+- **View Generated Code on a Separate Page**: The generated HTML and CSS code will be displayed on a separate page for you to copy and use.
 
 ## User Journey
 
@@ -26,11 +26,14 @@ New App is a website source code generator that allows users to generate simple 
    - The app will process your request. A loading indicator will appear to show that the code is being generated.
    - Please wait while the code is being generated. Do not click the button multiple times.
 
-4. **View and Copy Generated Code**
-   - Once the code is generated, it will be displayed on the screen.
+4. **View Generated Code on a Separate Page**
+   - Once the code is generated, you will be redirected to a new page where the code is displayed.
    - You will see two sections: one for the HTML code and one for the CSS code.
    - You can scroll through the code in each section.
    - Copy the code and use it in your own projects.
+
+5. **Return to Main Page**
+   - You can navigate back to the main page to generate more code by clicking on the "Back" button or using the browser's navigation controls.
 
 ## External Services Used
 

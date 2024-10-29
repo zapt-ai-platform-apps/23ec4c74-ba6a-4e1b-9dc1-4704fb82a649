@@ -1,5 +1,6 @@
 import { render } from 'solid-js/web';
 import App from './App';
+import { Router } from '@solidjs/router';
 import './index.css';
 
 // Add PWA support to the app
@@ -15,4 +16,8 @@ script.setAttribute('src', 'https://progressier.app/your_app_id/script.js');
 script.setAttribute('defer', 'true');
 document.querySelector('head').appendChild(script);
 
-render(() => <App />, document.getElementById('root'));
+render(() => (
+  <Router>
+    <App />
+  </Router>
+), document.getElementById('root'));

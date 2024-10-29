@@ -1,46 +1,46 @@
-# New App
+# التطبيق الجديد
 
-New App is a website source code generator that allows users to generate simple HTML and CSS code for a website based on their description.
+التطبيق الجديد هو مولّد كود مصدر لمواقع الويب يسمح للمستخدمين بتوليد كود HTML و CSS بسيط لموقع ويب بناءً على وصفهم.
 
-## Features
+## الميزات
 
-- **Website Description Input**: Provide a detailed description of the website you want to generate.
+- **إدخال وصف الموقع**: قدم وصفًا دقيقًا للموقع الذي ترغب في توليده.
 
-- **Generate Source Code**: Click on the "Generate Code" button to generate the HTML and CSS code for your website.
+- **توليد كود المصدر**: انقر على زر "توليد الكود" لتوليد كود HTML و CSS لموقعك.
 
-- **View Generated Code on a Separate Page**: The generated HTML and CSS code will be displayed on a separate page for you to copy and use.
+- **عرض الكود الناتج في صفحة منفصلة**: سيتم عرض كود HTML و CSS الناتج في صفحة منفصلة لتتمكن من نسخه واستخدامه.
 
-## User Journey
+## رحلة المستخدم
 
-1. **Access the App**
-   - Open the app. You will be taken directly to the main page.
+1. **الوصول إلى التطبيق**
+   - افتح التطبيق. سيتم نقلك مباشرة إلى الصفحة الرئيسية.
 
-2. **Describe Your Website**
-   - On the main page, you will see a text area labeled "Describe the website you want to generate".
-   - Enter a detailed description of the website you want to generate. For example:
-     - "A personal blog homepage with a header, navigation menu, featured posts section, and a footer with social media links."
-     - "A simple landing page for a coffee shop with an image banner, about section, menu section, and contact form."
+2. **وصف موقعك**
+   - في الصفحة الرئيسية، سترى حقل نص معنون بـ "صف وصف الموقع الذي تريد توليده".
+   - أدخل وصفًا دقيقًا للموقع الذي تريد توليده. على سبيل المثال:
+     - "صفحة رئيسية لمدونة شخصية مع رأس، قائمة تنقل، قسم مشاركات مميزة، وتذييل يحتوي على روابط وسائل التواصل الاجتماعي."
+     - "صفحة هبوط بسيطة لمقهى مع لافتة صورة، قسم معلومات عنا، قسم القائمة، ونموذج اتصال."
 
-3. **Generate Code**
-   - After entering your description, click on the "Generate Code" button.
-   - The app will process your request. A loading indicator will appear to show that the code is being generated.
-   - Please wait while the code is being generated. Do not click the button multiple times.
+3. **توليد الكود**
+   - بعد إدخال وصفك، انقر على زر "توليد الكود".
+   - سيقوم التطبيق بمعالجة طلبك. سيظهر مؤشر تحميل لإظهار أن الكود يتم توليده.
+   - يرجى الانتظار بينما يتم توليد الكود. لا تنقر على الزر عدة مرات.
 
-4. **View Generated Code on a Separate Page**
-   - Once the code is generated, you will be redirected to a new page where the code is displayed.
-   - You will see two sections: one for the HTML code and one for the CSS code.
-   - You can scroll through the code in each section.
-   - Copy the code and use it in your own projects.
+4. **عرض الكود الناتج في صفحة منفصلة**
+   - بمجرد توليد الكود، سيتم إعادة توجيهك إلى صفحة جديدة حيث يتم عرض الكود.
+   - سترى قسمين: واحد لكود HTML وآخر لكود CSS.
+   - يمكنك التمرير عبر الكود في كل قسم.
+   - انسخ الكود واستخدمه في مشاريعك الخاصة.
 
-5. **Return to Main Page**
-   - You can navigate back to the main page to generate more code by clicking on the "Back" button or using the browser's navigation controls.
+5. **العودة إلى الصفحة الرئيسية**
+   - يمكنك العودة إلى الصفحة الرئيسية لتوليد المزيد من الكود بالنقر على زر "العودة" أو استخدام أدوات التنقل في المتصفح.
 
-## External Services Used
+## الخدمات الخارجية المستخدمة
 
-- **ZAPT.ai**: The app uses ZAPT.ai's services for event handling.
-- **ChatGPT API**: The app sends your website description to the backend, which uses the ChatGPT API to generate the corresponding HTML and CSS code.
+- **ZAPT.ai**: يستخدم التطبيق خدمات ZAPT.ai لمعالجة الأحداث.
+- **واجهة ChatGPT API**: يقوم التطبيق بإرسال وصف موقعك إلى الخلفية، والتي تستخدم ChatGPT API لتوليد كود HTML و CSS المقابل.
 
-## Notes
+## ملاحظات
 
-- The generated code is intended for educational and prototyping purposes. It may require additional customization for production use.
-- The app is free to use.
+- الكود الناتج مخصص لأغراض تعليمية ونماذج أولية. قد يتطلب تخصيصًا إضافيًا للاستخدام في الإنتاج.
+- التطبيق مجاني للاستخدام.

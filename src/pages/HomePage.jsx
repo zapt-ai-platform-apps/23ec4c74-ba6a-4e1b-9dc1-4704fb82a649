@@ -12,7 +12,7 @@ function HomePage(props) {
     if (!description()) return;
     setLoading(true);
     try {
-      const prompt = `Generate a simple HTML and CSS code for a website according to the following description: ${description()}. Return the code in JSON format with "html" and "css" properties.`;
+      const prompt = `قم بتوليد كود HTML و CSS بسيط لموقع ويب وفقًا للوصف التالي: ${description()}. أعد الكود بتنسيق JSON مع خصائص "html" و "css".`;
       const result = await createEvent('chatgpt_request', {
         prompt: prompt,
         response_type: 'json'
@@ -27,19 +27,19 @@ function HomePage(props) {
   };
 
   return (
-    <div class="min-h-screen bg-gray-100 p-4">
+    <div class="min-h-screen bg-gray-100 p-4" dir="rtl">
       <div class="max-w-4xl mx-auto h-full">
         <div class="flex justify-between items-center mb-8">
-          <h1 class="text-4xl font-bold text-purple-600">Website Source Code Generator</h1>
+          <h1 class="text-4xl font-bold text-purple-600 text-right">مولّد كود مصدر لمواقع الويب</h1>
         </div>
         <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 class="text-2xl font-bold mb-4">Describe the website you want to generate</h2>
+          <h2 class="text-2xl font-bold mb-4 text-right">صف وصف الموقع الذي تريد توليده</h2>
           <textarea
             rows="5"
             value={description()}
             onInput={(e) => setDescription(e.target.value)}
-            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border"
-            placeholder="Enter your website description here..."
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border text-right"
+            placeholder="أدخل وصف موقعك هنا..."
           />
           <button
             onClick={handleGenerateCode}
@@ -48,7 +48,7 @@ function HomePage(props) {
             }`}
             disabled={loading()}
           >
-            {loading() ? 'Generating...' : 'Generate Code'}
+            {loading() ? 'جاري التوليد...' : 'توليد الكود'}
           </button>
         </div>
       </div>

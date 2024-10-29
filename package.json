@@ -1,7 +1,7 @@
 {
-  "name": "new-app",
+  "name": "التطبيق-الجديد",
   "version": "1.0.0",
-  "description": "A website source code generator",
+  "description": "مولّد كود مصدر لمواقع الويب",
   "type": "module",
   "scripts": {
     "dev": "vite",
